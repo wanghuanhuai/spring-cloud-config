@@ -1,0 +1,16 @@
+server:
+  port: 8673
+spring:
+  application:
+    name: admin-feign
+eureka:
+  instance:
+    hostname: 10.20.2.101
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:8671/eureka/
+feign:
+  hystrix:
+    enabled: true
