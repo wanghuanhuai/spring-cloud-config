@@ -1,5 +1,5 @@
 server:
-  port: 8673
+  port: 8665
 spring:
   application:
     name: admin-feign
