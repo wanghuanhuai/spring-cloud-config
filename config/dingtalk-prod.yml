@@ -16,7 +16,24 @@ eureka:
     instance-id: ${eureka.instance.hostname}:${server.port}
   client:
     service-url:
-defaultZone: http://106.12.184.126:8060/eureka/
-  feign:
+      defaultZone: http://localhost:8060/eureka/
+feign:
   hystrix:
     enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 9000
