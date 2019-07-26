@@ -43,3 +43,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://106.12.184.126:8060/eureka/
+lanson:
+  plm:
+    objectHref: http://10.20.0.7:8080/enovia/common/emxTree.jsp?objectId=
+  ding:
+    app[0]:
+      AgentId: 276867937
+      AppKey: dingjqucgxash2keqrql
+      AppSecret: a73spFkomTg4xZODa_53XEG3Kuj7TbDN2pTtVHPblxRSrc61DE7pYsQmlf7titoU
