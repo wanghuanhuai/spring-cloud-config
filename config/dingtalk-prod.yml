@@ -3,10 +3,6 @@ server:
 spring:
   application:
     name: dingtalk-web
-  boot:
-    admin:
-      client:
-        url: http://106.12.184.126:8880
   zipkin:
     base-url: http://106.12.184.126:8881
 eureka:
