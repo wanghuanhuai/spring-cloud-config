@@ -3,7 +3,8 @@ server:
 spring:
   cloud:
     inetutils:
-      ignored-interfaces: eth0
+      ignored-interfaces[0]: eth0
+      ignored-interfaces[1]: eth2
   application:
     name: dingtalk-web
   boot:
