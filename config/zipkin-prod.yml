@@ -1,0 +1,23 @@
+server:
+  port: 8881
+
+spring:
+  application:
+    name: zipkin-service
+  boot:
+    admin:
+      client:
+        url: http://106.12.184.126:8880
+eureka:
+  instance:
+    hostname: 106.12.184.126
+    prefer-ip-address: false
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://106.12.184.126:8060/eureka/
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

@@ -1,0 +1,26 @@
+server:
+  port: 8860
+
+spring:
+  application:
+    name: zuul-gateway
+  boot:
+    admin:
+      client:
+        url: http://106.12.184.126:8880
+  zipkin:
+    base-url: http://106.12.184.126:8881
+
+eureka:
+  instance:
+    hostname: 106.12.184.126
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://106.12.184.126:8060/eureka/
+zuul:
+  routes:
+    admin-feign:
+      path: /api/dingtalk/**
+      serviceId:  dingtalk-web
