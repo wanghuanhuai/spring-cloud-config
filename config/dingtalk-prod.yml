@@ -1,10 +1,6 @@
 server:
   port: 8851
 spring:
-  cloud:
-    inetutils:
-      ignored-interfaces[0]: eth0
-      ignored-interfaces[1]: eth2
   application:
     name: dingtalk-web
   boot:
@@ -16,7 +12,7 @@ spring:
 eureka:
   instance:
     hostname: 49.234.225.92
-    prefer-ip-address: true
+    prefer-ip-address: false
     instance-id: ${eureka.instance.hostname}:${server.port}
   client:
     service-url:
