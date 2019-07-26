@@ -1,6 +1,9 @@
 server:
   port: 8851
 spring:
+  cloud:
+    inetutils:
+      ignored-interfaces: eth0
   application:
     name: dingtalk-web
   boot:
