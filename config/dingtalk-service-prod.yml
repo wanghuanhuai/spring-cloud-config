@@ -1,0 +1,45 @@
+server:
+  port: 8850
+spring:
+  application:
+    name: dingtalk-service
+  zipkin:
+    base-url: http:/106.12.184.126::8881
+  boot:
+    admin:
+      client:
+        url: http://106.12.184.126:8880
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/dingtalk?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: Wang#1990
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+    properties:
+      hibernate:
+        format_sql: true
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-wait: -1
+        max-active: 20
+        max-idle: 10
+        min-idle: 0
+    timeout: 2000
+
+eureka:
+  instance:
+    hostname: 49.234.225.92
+    prefer-ip-address: false
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://106.12.184.126:8060/eureka/
