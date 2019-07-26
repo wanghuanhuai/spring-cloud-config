@@ -14,7 +14,7 @@ spring:
 eureka:
   instance:
     hostname: 106.12.184.126
-    prefer-ip-address: true
+    prefer-ip-address: false
     instance-id: ${eureka.instance.hostname}:${server.port}
   client:
     service-url:
