@@ -5,10 +5,6 @@ spring:
     name: redis-service
   zipkin:
     base-url: http://106.12.184.126:8881
-  boot:
-    admin:
-      client:
-        url: http://106.12.184.126:8880
   redis:
     database: 0
     host: 127.0.0.1

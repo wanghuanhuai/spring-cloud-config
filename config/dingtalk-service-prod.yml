@@ -5,10 +5,6 @@ spring:
     name: dingtalk-service
   zipkin:
     base-url: http://106.12.184.126:8881
-  boot:
-    admin:
-      client:
-        url: http://106.12.184.126:8880
   datasource:
     druid:
       url: jdbc:mysql://127.0.0.1:3306/dingtalk?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
