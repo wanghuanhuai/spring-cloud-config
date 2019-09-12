@@ -1,0 +1,31 @@
+server:
+  port: 8870
+spring:
+  application:
+    name: redis-service
+  zipkin:
+    base-url: http://106.12.184.126:8881
+  boot:
+    admin:
+      client:
+        url: http://106.12.184.126:8880
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-wait: -1
+        max-active: 20
+        max-idle: 10
+        min-idle: 0
+    timeout: 2000
+eureka:
+  instance:
+    hostname: 49.234.225.92
+    prefer-ip-address: false
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://106.12.184.126:8060/eureka/
