@@ -19,6 +19,7 @@ mybatis:
   type-aliases-package: com.lanson.servicedingtalk.domain
   mapper-locations: classpath:mapper/*.xml
 
+
 eureka:
   instance:
     hostname: 49.234.225.92
