@@ -31,7 +31,7 @@ mybatis:
 
 eureka:
   instance:
-    hostname: 49.234.225.92
+    hostname: 47.114.188.60
     prefer-ip-address: false
     instance-id: ${eureka.instance.hostname}:${server.port}
   client:

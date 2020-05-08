@@ -7,7 +7,7 @@ spring:
     base-url: http://106.12.184.126:8881
 eureka:
   instance:
-    hostname: 49.234.225.92
+    hostname: 47.114.188.60
     prefer-ip-address: true
     instance-id: ${eureka.instance.hostname}:${server.port}
   client:
