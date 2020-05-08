@@ -2,7 +2,7 @@ server:
   port: 8775
 spring:
   application:
-    name: dingtalk-service
+    name: wechat-service
   zipkin:
     base-url: http://106.12.184.126:8881
   datasource:
