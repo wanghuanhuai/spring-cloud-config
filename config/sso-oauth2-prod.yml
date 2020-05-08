@@ -1,0 +1,86 @@
+server:
+  port: 8890
+spring:
+  application:
+    name: sso-oauth2
+  zipkin:
+    base-url: http://106.12.184.126:8881
+  datasource:
+    druid:
+      url: jdbc:mysql://49.234.225.92:3306/dingtalk?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      username: root
+      password: Wang#1990
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-wait: -1
+        max-active: 20
+        max-idle: 10
+        min-idle: 0
+    timeout: 2000
+mybatis:
+  type-aliases-package: com.lanson.sso.domain
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    cache-enabled: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+eureka:
+  instance:
+    hostname: 49.234.225.92
+    prefer-ip-address: false
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://106.12.184.126:8060/eureka/
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 9000
+security:
+  oAuth2[0]:
+    clientId: webapp
+    clientSecret: 123456
+    cilentScope: all
+    autoApprove: true
+    validitySeconds: 3600
+    refreshSeconds: 604800
+  oAuth2[1]:
+    clientId: tort
+    clientSecret: 123456
+    cilentScope: all
+    autoApprove: true
+    validitySeconds: 3600
+    refreshSeconds: 604800
+  oAuth2[2]:
+    clientId: miniWehcat
+    clientSecret: password
+    cilentScope: all
+    autoApprove: true
+    validitySeconds: 3600
+    refreshSeconds: 604800
+

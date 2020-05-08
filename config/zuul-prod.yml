@@ -10,6 +10,10 @@ spring:
         url: http://106.12.184.126:8880
   zipkin:
     base-url: http://106.12.184.126:8881
+  servlet:
+    multipart:
+      max-file-size: 50Mb
+      max-request-size: 100Mb
 
 eureka:
   instance:
@@ -24,3 +28,35 @@ zuul:
     admin-feign:
       path: /api/dingtalk/**
       serviceId:  dingtalk-web
+    tort-feign:
+      path: /api/tort/**
+      sensitiveHeaders:
+      serviceId:  tort-api
+    auth:
+      path: /auth/**
+      sensitiveHeaders:
+      serviceId:  sso-oauth2
+    wechat:
+      path: /wx/**
+      sensitiveHeaders:
+      serviceId:  wechat-api
+    image:
+      path: /image/**
+      sensitiveHeaders:
+      serviceId:  wechat-service
+  add-proxy-headers: true
+
+#设置熔断是为6秒 并取消重试
+ribbon:
+  ConnectTimeout: 60000
+  ReadTimeout: 60000
+  OkToRetryOnAllOperations: false
+  eureka:
+    enabled: true
+#关闭超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
