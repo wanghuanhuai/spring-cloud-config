@@ -39,7 +39,7 @@ security:
       client-id: miniWehcat
       client-secret: password
       user-authorization-uri: http://localhost:8890/oauth/authorize
-      access-token-uri: http://localhost:8890/oauth/token #ªÒ»°Token
+      access-token-uri: http://localhost:8890/oauth/token #Ëé∑ÂèñToken
       refresh-token-uri: https://www.wzjhjy.ren/auth/oauth/token
     resource:
       jwt:
