@@ -7,7 +7,7 @@ spring:
     base-url: http://106.12.184.126:8881
   datasource:
     druid:
-      url: jdbc:mysql://49.234.225.92:3306/dingtalk?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://49.234.225.92:3306/wechat_db?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
       username: root
       password: Wang#1990
       driver-class-name: com.mysql.cj.jdbc.Driver

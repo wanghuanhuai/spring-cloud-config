@@ -13,8 +13,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://106.12.184.126:8060/eureka/
-    register-with-eureka: false
-    fetch-registry: false
 feign:
   hystrix:
     enabled: true
