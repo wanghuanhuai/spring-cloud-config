@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/config/redis-service-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/sso-oauth2-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/tort-api-prod.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/wechat-aaa-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/wechat-service-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/zipkin-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/zuul-prod.yml" charset="UTF-8" />
