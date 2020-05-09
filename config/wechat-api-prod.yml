@@ -1,10 +1,34 @@
 server:
-  port: 8770
+  port: 8775
 spring:
   application:
-    name: wechat-api
+    name: wechat-service
   zipkin:
     base-url: http://106.12.184.126:8881
+  datasource:
+    druid:
+      url: jdbc:mysql://49.234.225.92:3306/wechat_db?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      username: root
+      password: Wang#1990
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+  servlet:
+    multipart:
+      max-file-size: 40MB #上传文件大小限制
+      max-request-size: 40MB
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/filedb # MongoDB数据库连接配置
+mybatis:
+  type-aliases-package: com.lanson.wechat.domain
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
 eureka:
   instance:
     hostname: 47.114.188.60
@@ -13,34 +37,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://106.12.184.126:8060/eureka/
-feign:
-  hystrix:
-    enabled: true
-  client:
-    config:
-      default:
-        connectTimeout: 10000
-        readTimeout: 10000
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 10000
-    getProductInfoList:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 9000
-
-security:
-  oauth2:
-    client:
-      client-id: miniWehcat
-      client-secret: password
-      user-authorization-uri: http://localhost:8890/oauth/authorize
-      access-token-uri: http://localhost:8890/oauth/token #获取Token
-    resource:
-      jwt:
-        key-uri: http://localhost:8890/oauth/token_key
