@@ -22,6 +22,10 @@ spring:
   data:
     mongodb:
       uri: mongodb://127.0.0.1:27017/filedb # MongoDB数据库连接配置
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:static/
 mybatis:
   type-aliases-package: com.lanson.wechat.domain
   mapper-locations: classpath:mapper/*.xml
