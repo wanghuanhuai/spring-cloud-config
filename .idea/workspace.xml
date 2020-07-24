@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9e85d49-2c0f-45da-8e32-82275f0cb796" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/sso-oauth2-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/sso-oauth2-prod.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/" />
@@ -53,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/zuul-prod.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="151">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -62,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/sso-oauth2-prod.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="-770">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -316,21 +315,7 @@
       <workItem from="1589175911924" duration="1734000" />
       <workItem from="1589181548638" duration="106000" />
       <workItem from="1592791431941" duration="598000" />
-      <workItem from="1595560240258" duration="4561000" />
-    </task>
-    <task id="LOCAL-00004" summary="配置文件">
-      <created>1563416174626</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1563416174627</updated>
-    </task>
-    <task id="LOCAL-00005" summary="配置文件">
-      <created>1563420044502</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1563420044502</updated>
+      <workItem from="1595560240258" duration="5606000" />
     </task>
     <task id="LOCAL-00006" summary="钉钉配置文件">
       <created>1563763068064</created>
@@ -661,11 +646,25 @@
       <option name="project" value="LOCAL" />
       <updated>1595574544876</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="添加小程序消费端配置文件">
+      <created>1595575052522</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1595575052522</updated>
+    </task>
+    <task id="LOCAL-00054" summary="添加小程序消费端配置文件">
+      <created>1595575472499</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1595575472500</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77899000" />
+    <option name="totallyTimeSpent" value="78944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -885,15 +884,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/zuul-prod.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="151">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/sso-oauth2-prod.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="-770">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
