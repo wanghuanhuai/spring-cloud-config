@@ -4,10 +4,10 @@ spring:
   application:
     name: dingtalk-service
   zipkin:
-    base-url: http://16.62.6.120:8881
+    base-url: http://116.62.6.120:8881
   datasource:
     druid:
-      url: jdbc:mysql://16.62.6.120:3306/dingtalk?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://116.62.6.120:3306/dingtalk?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
       username: root
       password: Lanson#123
       driver-class-name: com.mysql.cj.jdbc.Driver
@@ -27,4 +27,4 @@ eureka:
     instance-id: ${eureka.instance.hostname}:${server.port}
   client:
     service-url:
-      defaultZone: http://106.12.184.126:8060/eureka/
+      defaultZone: http://116.62.6.120:8060/eureka/
