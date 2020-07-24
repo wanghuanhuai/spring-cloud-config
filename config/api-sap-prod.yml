@@ -40,7 +40,7 @@ security:
       client-secret: password
       user-authorization-uri: http://116.62.6.120/auth/oauth/authorize
       access-token-uri: http://116.62.6.120/auth/oauth/token #获取Token
-      refresh-token-uri: http://116.62.6.120auth/oauth/token
+      refresh-token-uri: http://116.62.6.120/auth/oauth/token
     resource:
       jwt:
         key-uri: http://116.62.6.120/auth/oauth/token_key
