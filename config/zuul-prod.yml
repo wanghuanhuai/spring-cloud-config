@@ -7,9 +7,9 @@ spring:
   boot:
     admin:
       client:
-        url: http://106.12.184.126:8880
+        url: http://116.62.6.120:8880
   zipkin:
-    base-url: http://106.12.184.126:8881
+    base-url: http://116.62.6.120:8881
   servlet:
     multipart:
       max-file-size: 50Mb
@@ -17,12 +17,12 @@ spring:
 
 eureka:
   instance:
-    hostname: 106.12.184.126
+    hostname: 116.62.6.120
     prefer-ip-address: false
     instance-id: ${eureka.instance.hostname}:${server.port}
   client:
     service-url:
-      defaultZone: http://106.12.184.126:8060/eureka/
+      defaultZone: http://116.62.6.120:8060/eureka/
 zuul:
   routes:
     admin-feign:
@@ -44,8 +44,15 @@ zuul:
       path: /image/**
       sensitiveHeaders:
       serviceId:  wechat-service
+    sap:
+      path: /sap/**
+      sensitiveHeaders:
+      serviceId:  sap-api
+    sap-service:
+      path: /sapSerive/**
+      sensitiveHeaders:
+      serviceId:  sap-service
   add-proxy-headers: true
-
 #设置熔断是为6秒 并取消重试
 ribbon:
   ConnectTimeout: 60000
