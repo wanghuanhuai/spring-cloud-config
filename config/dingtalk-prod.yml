@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: dingtalk-web
-  zipkin:
-    base-url: http://116.62.6.120:8881
 eureka:
   instance:
     hostname: 47.114.188.60
