@@ -24,3 +24,6 @@ eureka:
     service-url:
       defaultZone: http://116.62.6.120:8060/eureka/
 
+sap:
+  env: prod
+
