@@ -19,15 +19,15 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 100000
-        readTimeout: 100000
+        connectTimeout: 20000
+        readTimeout: 20000
 hystrix:
   command:
     default:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 100000
+            timeoutInMilliseconds: 20000
     getProductInfoList:
       execution:
         isolation:
