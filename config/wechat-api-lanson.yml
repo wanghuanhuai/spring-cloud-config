@@ -1,0 +1,46 @@
+server:
+  port: 8863
+spring:
+  application:
+    name: wechat-api
+  zipkin:
+    base-url: http://106.12.184.126:8881
+eureka:
+  instance:
+    hostname: 122.225.237.18
+    prefer-ip-address: false
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://106.12.184.126:8060/eureka/
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 9000
+security:
+  oauth2:
+    client:
+      client-id: miniWehcat
+      client-secret: password
+      user-authorization-uri: https://www.wzjhjy.ren/oauth/authorize
+      access-token-uri: https://www.wzjhjy.ren/oauth/token #获取Token
+      refresh-token-uri: https://www.wzjhjy.ren/auth/oauth/token
+    resource:
+      jwt:
+        key-uri: https://www.wzjhjy.ren/oauth/token_key
