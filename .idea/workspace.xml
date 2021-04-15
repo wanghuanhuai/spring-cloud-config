@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9e85d49-2c0f-45da-8e32-82275f0cb796" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/wechat-api-lanson.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f9e85d49-2c0f-45da-8e32-82275f0cb796" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/wechat-api-lanson.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="84">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -325,21 +322,7 @@
       <workItem from="1600742782597" duration="2150000" />
       <workItem from="1601449568327" duration="1621000" />
       <workItem from="1605230299409" duration="3923000" />
-      <workItem from="1618465698644" duration="2132000" />
-    </task>
-    <task id="LOCAL-00019" summary="钉钉配置文件-增加超时时间">
-      <created>1564109436235</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1564109436235</updated>
-    </task>
-    <task id="LOCAL-00020" summary="网关和链路追踪配置文件">
-      <created>1564110584498</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1564110584498</updated>
+      <workItem from="1618465698644" duration="2379000" />
     </task>
     <task id="LOCAL-00021" summary="admin重复配置">
       <created>1564111159461</created>
@@ -670,11 +653,25 @@
       <option name="project" value="LOCAL" />
       <updated>1618468858565</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="添加Lanson本地集群">
+      <created>1618469466879</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1618469466879</updated>
+    </task>
+    <task id="LOCAL-00069" summary="添加Lanson本地集群">
+      <created>1618469596294</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1618469596294</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98159000" />
+    <option name="totallyTimeSpent" value="98406000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,8 +683,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31862745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -920,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/wechat-api-lanson.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="84">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>

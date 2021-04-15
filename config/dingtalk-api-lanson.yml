@@ -1,0 +1,47 @@
+server:
+  port: 8851
+spring:
+  application:
+    name: dingtalk-web
+eureka:
+  instance:
+    hostname: 47.114.188.60
+    prefer-ip-address: false
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://116.62.6.120:8060/eureka/
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 9000
+lanson:
+  plm:
+    objectHref: http://10.20.0.7:8080/enovia/common/emxTree.jsp?objectId=
+  ding:
+    app[0]:
+      AgentId: 276867937
+      AppKey: dingjqucgxash2keqrql
+      AppSecret: a73spFkomTg4xZODa_53XEG3Kuj7TbDN2pTtVHPblxRSrc61DE7pYsQmlf7titoU
+    app[1]:
+      AgentId: 278347056
+      AppKey: dinglxzrz5lzraevbfet
+      AppSecret: 9HfrVS9_RoqXDzVwlXxDQnV4VuzPggddQU-GksrinHXJEbFL_APz0jUy3qu2oheL
+    robot[0]:
+      accessToken: 563507ee9d55f1d0ec9224a3742d8435a6aa54d7bea6a3c5cc79a18e44670f4e
