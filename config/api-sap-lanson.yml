@@ -1,5 +1,5 @@
 server:
-  port: 8776
+  port: 8864
 spring:
   application:
     name: sap-api
@@ -7,7 +7,7 @@ spring:
     base-url: http://116.62.6.120:8881
 eureka:
   instance:
-    hostname: 47.114.188.60
+    hostname: 122.225.237.18
     prefer-ip-address: false
     instance-id: ${eureka.instance.hostname}:${server.port}
   client:
