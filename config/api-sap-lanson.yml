@@ -1,0 +1,46 @@
+server:
+  port: 8864
+spring:
+  application:
+    name: sap-api
+  zipkin:
+    base-url: http://116.62.6.120:8881
+eureka:
+  instance:
+    hostname: 122.225.237.18
+    prefer-ip-address: false
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://116.62.6.120:8060/eureka/
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 20000
+        readTimeout: 20000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 9000
+security:
+  oauth2:
+    client:
+      client-id: miniWehcat
+      client-secret: password
+      user-authorization-uri: http://116.62.6.120/auth/oauth/authorize
+      access-token-uri: http://116.62.6.120/auth/oauth/token #获取Token
+      refresh-token-uri: http://116.62.6.120/auth/oauth/token
+    resource:
+      jwt:
+        key-uri: http://116.62.6.120/auth/oauth/token_key
