@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/config/admin-dev.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/admin-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/admin-test.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/api-sap-lanson.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/api-sap-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/dingtalk-api-lanson.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/dingtalk-dev.yml" charset="UTF-8" />
