@@ -1,0 +1,30 @@
+server:
+  port: 8865
+spring:
+  application:
+    name: dingtalk-service
+  zipkin:
+    base-url: http://116.62.6.120:8881
+  datasource:
+    druid:
+      url: jdbc:mysql://116.62.6.120:3306/dingtalk?useSSL=false&characterEncoding=utf8mb4&serverTimezone=Asia/Shanghai
+      username: root
+      password: Lanson#123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+mybatis:
+  type-aliases-package: com.lanson.servicedingtalk.domain
+  mapper-locations: classpath:mapper/*.xml
+
+
+eureka:
+  instance:
+    hostname: 122.225.237.18
+    prefer-ip-address: false
+    instance-id: ${eureka.instance.hostname}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://116.62.6.120:8060/eureka/

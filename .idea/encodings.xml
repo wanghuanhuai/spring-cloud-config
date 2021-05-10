@@ -5,11 +5,11 @@
     <file url="file://$PROJECT_DIR$/config/admin-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/admin-test.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/api-sap-lanson.yml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/config/api-sap-lanson.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/api-sap-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/dingtalk-api-lanson.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/dingtalk-dev.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/dingtalk-prod.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/dingtalk-service-lanson.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/dingtalk-service-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/redis-service-prod.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/sap-service-prod.yml" charset="UTF-8" />
