@@ -7,7 +7,7 @@ spring:
     base-url: http://116.62.6.120:8881
   datasource:
     druid:
-      url: jdbc:mysql://116.62.6.120:3306/dingtalk?useSSL=false&characterEncoding=utf8mb4&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://116.62.6.120:3306/dingtalk?useSSL=false&character_set_server=utf8mb4&serverTimezone=Asia/Shanghai
       username: root
       password: Lanson#123
       driver-class-name: com.mysql.cj.jdbc.Driver
@@ -22,7 +22,7 @@ mybatis:
 
 eureka:
   instance:
-    hostname: 47.114.188.60
+    hostname: 122.225.237.18
     prefer-ip-address: false
     instance-id: ${eureka.instance.hostname}:${server.port}
   client:
