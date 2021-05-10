@@ -8,7 +8,7 @@ spring:
   datasource:
     druid:
       url: jdbc:mysql://116.62.6.120:3306/dingtalk?useSSL=false&character_set_server=utf8mb4&serverTimezone=Asia/Shanghai
-      username: root1
+      username: root
       password: Lanson#123
       driver-class-name: com.mysql.cj.jdbc.Driver
       initial-size: 1
